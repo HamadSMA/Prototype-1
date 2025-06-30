@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController2 : MonoBehaviour
 {
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private float speed = 20.0f;
     private float turnSpeed = 45.0f;
     private float horizontalInput;
@@ -18,8 +19,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal1");
-        forwardInput = Input.GetAxis("Vertical1");
+        horizontalInput = Input.GetAxis("Horizontal2");
+        forwardInput = Input.GetAxis("Vertical2");
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
